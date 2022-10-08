@@ -1,0 +1,204 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: no-repeat center center;
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  
+    background: linear-gradient(to right, #0575E6, #00F260);  
+    
+    /* background-color: yellow; */
+    height: auto;
+}
+
+body h1{
+    text-align: center;
+    color: #c31432;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#intro{
+    background-color: white;
+    display: block;
+    height: fit-content;
+    
+}
+
+#intro .introduction{
+    display: block;
+    background: white;
+    /* border: 2px solid cyan; */
+    height: fit-content;
+    margin-top: 175px;
+    font-size: 24px;
+}
+
+#skills{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    height: fit-content;
+    padding: 15px;
+    color: violet;
+}
+
+#skills h1{
+    margin-top: 80px;
+    
+}
+
+#projects{
+    border: 3px seagreen solid; 
+    width: auto;
+    height: fit-content;
+}
+
+
+
+#education{
+    margin-top: 100px;
+    height: auto;
+}
+
+#education h1{
+    margin-top: 80px;
+    
+}
+
+#edu{
+    
+    width:  auto;
+    margin-bottom: 125px;
+    justify-items: center;
+    margin-inline: auto;
+}
+
+
+
+#contact{
+     margin-top: 100px;    
+     height: fit-content;
+     
+}
+
+#contactDetails{
+    
+    margin: 20px;
+    /* border: 5px solid cyan; */
+    height: fit-content;
+    
+    /* background-color: yellow; */
+    display: flex;
+    justify-content:space-around ;
+}
+
+
+/* #socLinks{
+    background-color: aqua;
+} */
+
+#socLinks img{
+    margin: 0px 20px;
+}
+
+#ep{
+    width: auto;
+    height: fit-content;
+    padding: 15px;
+}
+
+
+footer{
+    background-color: aqua;
+    margin: 25px;
+}
+
+footer .soc_icons{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer .soc_icons a{
+    text-decoration: none;
+}
+
+footer ul{
+    margin: 5px 0px;
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer .copywrite{
+    margin-bottom:  15px;
+    text-align: center;
+    font-size: 20px;
+    color: brown;
+}
+
+/* ===================================================== */
+
+.mcards {
+    width: 20%;
+    background-color: cadetblue;
+    border-radius: 25px;
+    box-shadow: 5px 5px black;
+    margin: 20px;
+  }
+  .mimg img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .mtitle {
+    text-align: center;
+    
+  }
+  .mtitle h3{
+    color: black
+  }
+  .des {
+    text-align: center;
+  }
+  button {
+    margin-top: 20px;
+    background-color: lightgreen;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 7pt;
+  }
+  button:hover {
+    color: lightgreen;
+    background-color: black;
+    transition: 0.7s;
+  }
+  .cardContain {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid lightgreen;
+    flex-direction: row;
+    
+  }
+
+  @media (max-width: 800px) {
+    .cardContain {
+      flex-direction: column;
+    }
+    .mcards{
+        width: auto;
+    }
+}

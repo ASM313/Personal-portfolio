@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atiq Mansoori's Portfolio </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="position: sticky; top: 0; width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="static/images/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Er_ASM
+          </a>
+              
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 50px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 30px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav><br>  
+          <!-------------------------------- Main content  ---------------------------------------------------------------------------->
+      <h1>Personal Portfolio!</h1>
+      <hr>
+      <div class="container" style="margin-top: 20px;">
+
+        <div id="intro" style="border: 3px red solid; width: auto;">
+            <div class="image">
+                <img src="static/images/asm.png" class="img-fluid rounded float-start" alt="Atiq Mansoori" style=" height: 490px; width: fit-content;">
+
+            </div>            
+            <div class="introduction">
+                        <h2 style="text-align: center; color: darkcyan; margin-top: 10px;">I'm Atiq Mansoori</h2><hr>
+                        <p>A Data Science enthusiast with good knowlegde of <strong> Machine Learning, Deep Learning Algorithms, concept of Natural Language Processing</strong> and familiar with <em style="color: sienna;"><strong> Front-end development</em>.</strong> </p>
+                        <p>Looking for the oppotunity in Data Science feild with my hands-on experience on ML, DL and NLP models.</p>
+                      <div id="downCV" style="display: flex; justify-content: center; margin-bottom: 10px;">
+                        <a href="/static/images/Atiq_Mansoori_Resume.pdf" class="btn btn-dark" target="_blank">Download CV</a>
+                       </div> 
+            </div>            
+          </div>
+       
+          <!-- Skills section ---------------------------------------------------------------------------------------------->
+       
+          <div id="skills" style="border: 3px slategray solid; width: auto;">
+          <h1>My Skill-set</h1><hr style="color: blanchedalmond;">
+          <div class="table-responsive">
+          <table class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Domain</th>
+                <th scope="col">Technology</th>
+                <th scope="col">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Data Science</td>
+                <td>Machine Learning, Deep Learning and NLP</td>
+                <td>Supervised Learning, Unsupervised Learning, Sentiment Analysis etc.</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Programming Language</td>
+                <td>Python</td>
+                <td>Basic concepts, NumPy, Pandas, Seaborn, Matplotlib, ScikitLearn etc.</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Web Development</td>
+                <td>HTML, CSS, JavaScript</td>
+                <td>ES6 classes</td>                    
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Database</td>
+                <td>MySQL</td>
+                <td>ES6 classes</td>                    
+              </tr>
+              <tr>
+              
+              <tr>
+                <th scope="row">5</th>
+                <td>Frameworks</td>
+                <td>Flask, Bootstrap and React</td>
+                <td>Flask used for backend,  Bootstrap and React for frontend.</td>                    
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Tools</td>
+                <td>VSCode, MySQL WorkBench, PyCharm, Anaconda(Jupyter), Google Colab</td>
+                <td>I've tried these all editors</td>                    
+              </tr>
+              
+            </tbody>
+          </table>
+          <hr>
+          <h2>Continues gaining knowlegde...</h2>
+
+        </div>
+        </div>
+       
+        <!------------------------- Projects section -------------------------------------------------------------------------------------->
+       
+        <div id="projects">
+          <h1 style="text-align: center; margin-top: 50px;">End-to-End Projects</h1>
+          <div id="my-projects">        
+            <div class="cardContain">
+              <div class="mcards">
+                <div class="mimg">
+                  <img src="/static/images/project1.jpg" alt="Breast Cancer logo" />
+                </div>
+                <div class="mtitle">
+                  <h3>Breast Cancer Predictor</h3>
+                </div>
+                <div class="des">
+                  <p>
+                    With the help of Supervised Learning technique (Support Vector Classifier). I had trained a modal on dataset, contains the information of Breast Cancer symptoms. The dataset classified into two classes. A web-app is developed for this. You can check it.   
+                  </p>
+                  <button>Know more</button>
+                </div>
+              </div>
+              <div class="mcards">
+                <div class="mimg">
+                  <img src="/static/images/project2.png" height="170px" alt="Diabetes Logo" />
+                </div>
+                <div class="mtitle">
+                  <h3>Diabetes Detection with Machine Learning</h3>
+                </div>
+                <br>
+                <div class="des">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui
+                    obcaecati quo aperiam consectetur aliquid ipsam, dolor dolorem
+                    perferendis perspiciatis impedit vitae sapiente modi ipsum quia
+                    eveniet sed. Deserunt, modi!
+                  </p>
+                  <button>Know more</button>
+                </div>
+              </div>
+              <div class="mcards">
+                <div class="mimg">
+                  <img src="/static/images/project3.png" height="170px" alt="Flask logo" />
+                </div>
+                <br>
+                <div class="mtitle">
+                  <h3>CRUD Application</h3>
+                </div>
+                <div class="des">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui
+                    obcaecati quo aperiam consectetur aliquid ipsam, dolor dolorem
+                    perferendis perspiciatis impedit vitae sapiente modi ipsum quia
+                    eveniet sed. Deserunt, modi!
+                  </p>
+                  <button>Know more</button>
+                </div>
+              </div>
+              <div class="mcards">
+                <div class="mimg">
+                  <img src="/static/images/project4.jpg" height="170px" alt="Portfolio logo" />
+                </div>
+                <br>
+                <div class="mtitle">
+                  <h3>Personal Portfolio website</h3>
+                </div>
+                <div class="des">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui
+                    obcaecati quo aperiam consectetur aliquid ipsam, dolor dolorem
+                    perferendis perspiciatis impedit vitae sapiente modi ipsum quia
+                    eveniet sed. Deserunt, modi!
+                  </p>
+                  <button>Know more</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h1 style="text-align: left; color: black;">Working on some projects...</h1>
+          </div>
+        
+      </div>
+        <!-- Education section ---------------------------------------------------------------------------------------------->
+        
+        <div id="education" style="border: 3px skyblue solid; width: auto;">
+          <h1>My Education</h1><hr>
+          <div id="edu">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: cyan;">
+                      <h4> 1. Master of Engineering (2020-2022) </h4>   
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" style="background: rgb(133, 251, 251);" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-info">
+                      <tbody>
+                        <tr>
+                         <td>Specialization </td>
+                         <td>Computer Science and Engineering</td>
+                         </tr>
+                         <tr>
+                           <td>Studied from  </td>
+                           <td>Institute of Engineering and Sciences, IPS Academy, Indore.</td>
+                         </tr>
+                         <tr>
+                           <td>Aggregate  </td>
+                           <td>9.2</td>
+                          </tr>
+                                          
+                      </tbody>
+                    </table>
+                                          
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: mediumaquamarine; text-align: center">
+                     <h4>2. Bachelor of Engineering (2016-2020)</h4>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" style="background-color: rgb(186, 235, 218);" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-info">
+                      <tbody>
+                        <tr>
+                         <td>Specialization </td>
+                         <td>Computer Science and Engineering</td>
+                         </tr>
+                         <tr>
+                           <td>Studied from  </td>
+                           <td>Jawaharlal Institute of Technology, Borawan, Khargone.</td>
+                         </tr>
+                         <tr>
+                           <td>Aggregate  </td>
+                           <td>7.67</td>
+                          </tr>
+                                          
+                      </tbody>
+                    </table>
+                    
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color:wheat">
+                    <h4>3. Class 10th and Class 12th </h4>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" style="background-color: rgb(146, 142, 137);" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table table-info">
+                      <tbody>
+                        <tr>
+                         <td>Class 12th </td>
+                         <td>Harsukh Digamber Jain Higher Secondary School, Barwani</td>
+                         <td>Percentage : 89.40</td>
+                         <td>(2015-2016)</td>
+                         </tr>
+                         <tr>
+                          <td>Class 10th </td>
+                          <td>Anjad Public Higher Secondary School, Anjad</td>
+                          <td>Percentage : 89.40</td>
+                          <td>(2013-2014)</td>
+                          </tr>
+                          
+                                          
+                      </tbody>
+                    </table>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Contact section ---------------------------------------------------------------------------------------------->
+        
+        <div id="contact" style="border: 3px saddlebrown solid; width: auto;">
+          <br><br><br>
+          <h1>Social Media Accounts</h1><hr>
+          <div id="contactDetails">
+            <br>
+             <div id="socLinks">
+              <a href="http://github.com/ASM313" target="_blank">
+              <img src="/static/images/github.png"  width="150px" height="180px" style="padding: 15px;" alt=""></a>
+              <a href="http://www.linkedin.com/in/atiqmansoori7" target="_blank">
+              <img src="/static/images/linkedin.png" width="150px" height="180px" alt="" style="padding: 15px;">
+            </a>
+            <a href="http://www.kaggle.com/atiqmansoori" target="_blank">
+              <img src="/static/images/Kaggle_.webp" width="150px" height="180px" alt="" style="padding: 15px;">
+            </a>
+            <a href="http://www.instagram.co.in" target="_blank">
+              <img src="/static/images/instagram.png" width="150px" height="180px" alt="" style="padding: 15px;">
+            </a>
+            <a href="https://www.youtube.com/channel/UCtRC1xNIcZhCPj-3L9T__Dg" target="_blank">
+              <img src="/static/images/youtube.png" width="150px" height="180px" alt="" style="padding: 15px;">
+            </a>
+            <a href="http://wa.me/919174142387" target="_blank">  
+              <img src="/static/images/whatsapp.png" width="150px" height="180px"  alt="" style="padding: 15px;">
+            </a>  
+              </div>
+             <br>
+              
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer section ---------------------------------------------------------------------------------------------->
+          <footer>
+            <div class="soc_icons">
+              <a href="http://github.com/ASM313" target="_blank">GitHub |</a>
+              <a href="http://www.kaggle.com/atiqmansoori" target="_blank"> Kaggle |</a>
+              <a href="http://www.linkedin.com/in/atiqmansoori7" target="_blank"> Linkedin |</a>
+              <a href="http://www.youtube.com/channel/UCtRC1xNIcZhCPj-3L9T__Dg" target="_blank"> Youtube |</a>
+              <a href="http://www.instagram.co.in" target="_blank"> Instagram |</a>
+              <a href=""> +91 9174142387</a>
+            </div>
+            <ul class="flist">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              
+            </ul>
+            <p class="copywrite">
+              ASM Group @ 2022
+            </p>
+          </footer>
+          <script src="/static/app.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
